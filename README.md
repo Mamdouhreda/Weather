@@ -6,33 +6,24 @@ Search for weather information of a specific city
 Display current temperature, weather description, humidity, wind speed, and local time
 Clear the displayed weather data
 Responsive design for different screen sizes
+
 Getting Started
 To get started with the Weather React App, follow these steps:
 
-Clone the repository to your local machine using the following command:
+1.	Clone the repository to your local machine using the following command:
+       git clone https://github.com/mamdouhreda/weather-react-app.git
+       Navigate to the project directory:
 
-bash
-Copy code
-git clone https://github.com/your-username/weather-react-app.git
-Navigate to the project directory:
+2.	cd weather-react-app
+      Install the project dependencies using npm:
+       npm install
 
-bash
-Copy code
-cd weather-react-app
-Install the project dependencies using npm:
 
-Copy code
-npm install
-Obtain an API key from OpenWeatherMap by signing up on their website. Replace the apiKey variable in the App.js file with your API key:
+3.	Obtain an API key from OpenWeatherMap by signing up on their website. Replace the apiKey variable in the App.js file with your API key:
+              const apiKey = 'YOUR_API_KEY';
+                Start the development server:
 
-javascript
-Copy code
-const apiKey = 'YOUR_API_KEY';
-Start the development server:
-
-sql
-Copy code
-npm start
+4.	npm start
 Open your browser and visit http://localhost:3000 to see the Weather React App in action.
 
 Contributing
@@ -42,24 +33,17 @@ Fork the repository by clicking the "Fork" button on the top right corner of thi
 
 Clone your forked repository to your local machine:
 
-bash
-Copy code
-git clone https://github.com/your-username/weather-react-app.git
+git clone https://github.com/mamdouhreda/weather-react-app.git
 Create a new branch for your feature or bug fix:
-
-css
-Copy code
 git checkout -b feature-name
+
+
+
 Make the necessary changes and commit your work:
 
-sql
-Copy code
 git add .
 git commit -m "Add feature-name"
 Push your changes to your forked repository:
-
-perl
-Copy code
 git push origin feature-name
 Create a new pull request on the original repository's GitHub page.
 
@@ -78,3 +62,4 @@ Feel free to fork this repository and further develop the Weather React App base
 If you have any questions or need assistance, please don't hesitate to reach out.
 
 Mamdouh Elsheshtawy
+
