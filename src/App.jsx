@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import WriteEffect from './components/WriteEffect';
 
 function App() {
   const [data, setData] = useState([]);
@@ -14,7 +15,6 @@ function App() {
       setLocation('');
     });
   }
-  
   function handleKeyDown(event) {
     if (event.key === 'Enter') {
       searchWeather();
@@ -49,7 +49,13 @@ function App() {
   
 
   return (
+    
     <div className='min-h-screen min-w-full bg-color1 flex flex-col items-center justify-center font-roboto'>
+      <div className='absolute w-full text-center mb-96'>
+    <div className='text-2xl text-color3 font-semibold'>
+      <WriteEffect />
+    </div>
+    </div> 
       <div className='flex flex-col sm:flex-row justify-center w-full sm:w-auto mb-10 gap-3'>
         <input className='p-3 rounded-lg w-full sm:w-auto h-12 outline-none'
           onChange={handleInputChange}
